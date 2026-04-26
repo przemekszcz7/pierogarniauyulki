@@ -156,7 +156,7 @@ export default function App() {
           </motion.p>
 
           <motion.h1
-            className="text-7xl md:text-9xl font-serif font-black mb-12 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] italic"
+            className="text-5xl md:text-9xl font-serif font-black mb-12 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] italic"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
@@ -239,7 +239,7 @@ export default function App() {
               viewport={{ once: true }}
               className="bg-white rounded-none p-1 md:p-2 asian-border shadow-2xl group"
             >
-              <div className="bg-cream border border-primary/10 p-8 md:p-16 flex flex-col lg:flex-row gap-16 items-center">
+              <div className="bg-cream border border-primary/10 p-6 md:p-16 flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
                 <div className="lg:w-1/2 relative overflow-hidden rounded-none h-[400px] w-full">
                   <motion.img 
                     whileHover={{ scale: 1.1 }}
@@ -359,11 +359,11 @@ export default function App() {
         <div className="absolute inset-0 oriental-grid opacity-5 pointer-events-none" />
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-24 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <div>
               <motion.div {...fadeIn}>
                 <span className="text-accent font-black uppercase tracking-[0.4em] text-xs block mb-6">Kontakt</span>
-                <h2 className="text-5xl md:text-8xl font-serif font-black mb-12 leading-[0.9] italic">
+                <h2 className="text-4xl md:text-8xl font-serif font-black mb-12 leading-[0.9] italic">
                   Czekamy <br /> na <span className="text-accent underline decoration-red underline-offset-8">Ciebie</span>
                 </h2>
                 
@@ -377,14 +377,14 @@ export default function App() {
                       key={i}
                       href={item.link}
                       whileHover={{ x: 20 }}
-                      className="flex items-center gap-8 p-8 border-b border-white/10 hover:border-accent transition-all group"
+                      className="flex items-center gap-6 md:gap-8 p-6 md:p-8 border-b border-white/10 hover:border-accent transition-all group"
                     >
                       <div className="text-accent group-hover:scale-125 transition-transform">
                         <item.icon size={32} />
                       </div>
                       <div>
                         <div className="text-[10px] uppercase font-black tracking-[0.3em] text-white/40 mb-1">{item.title}</div>
-                        <div className="text-2xl font-serif font-bold italic">{item.content}</div>
+                        <div className="text-xl md:text-2xl font-serif font-bold italic break-all leading-tight">{item.content}</div>
                         <div className="text-xs font-black text-accent mt-2 uppercase tracking-widest">{item.sub}</div>
                       </div>
                     </motion.a>
@@ -395,13 +395,13 @@ export default function App() {
 
             <motion.div 
               {...fadeIn}
-              className="bg-primary/90 backdrop-blur-md p-16 rounded-none asian-border shadow-[30px_30px_0px_0px_rgba(212,175,55,0.2)] md:ml-12"
+              className="bg-primary/90 backdrop-blur-md p-8 md:p-16 rounded-none asian-border shadow-[15px_15px_0px_0px_rgba(212,175,55,0.2)] md:shadow-[30px_30px_0px_0px_rgba(212,175,55,0.2)] md:ml-12"
             >
               <div className="mb-12">
                 <div className="w-12 h-12 border-2 border-accent rotate-45 mb-10 flex items-center justify-center">
                    <div className="w-8 h-8 border border-white -rotate-45" />
                 </div>
-                <h3 className="text-4xl md:text-5xl font-serif font-black italic mb-8">Social Media</h3>
+                <h3 className="text-3xl md:text-5xl font-serif font-black italic mb-8">Social Media</h3>
                 <p className="text-white/70 text-lg font-light leading-relaxed mb-12">
                   Codzienne menu, zdjęcia kuchni "od zaplecza" i najświeższe promocje publikujemy zawsze w pierwszej kolejności na Facebooku.
                 </p>
@@ -438,7 +438,7 @@ export default function App() {
             <div className="flex flex-col items-center md:items-start gap-4">
               <img src={FAVICON_URL} alt="Logo" className="w-16 h-16 rounded-full border-2 border-accent/30" />
               <div className="text-center md:text-left">
-                <span className="text-white font-serif text-4xl font-black italic block">Pierogarnia u Yulki</span>
+                <span className="text-white font-serif text-3xl md:text-4xl font-black italic block">Pierogarnia u Yulki</span>
                 <span className="text-accent text-[10px] font-black uppercase tracking-[0.5em] block mt-2">Tradycja w sercu Międzychodu</span>
               </div>
             </div>
