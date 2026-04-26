@@ -146,8 +146,17 @@ export default function App() {
             </div>
           </motion.div>
 
+          <motion.p
+            className="text-xl md:text-3xl mb-4 text-accent font-black uppercase tracking-[0.4em] italic"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5 }}
+          >
+            Pysznie jak u mamy
+          </motion.p>
+
           <motion.h1
-            className="text-7xl md:text-9xl font-serif font-black mb-8 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] italic"
+            className="text-7xl md:text-9xl font-serif font-black mb-12 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)] italic"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: 0.3 }}
