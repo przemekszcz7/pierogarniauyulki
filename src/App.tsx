@@ -83,8 +83,8 @@ export default function App() {
               <img src={FAVICON_URL} alt="Logo" className="w-14 h-14 rounded-full border-2 border-primary relative z-10 shadow-lg" />
             </div>
             <div className="flex flex-col">
-              <span className="text-2xl font-serif font-black text-primary tracking-tighter italic">Pierogarnia</span>
-              <span className="text-xs font-bold text-accent tracking-[0.3em] uppercase -mt-1 ml-1">u Yulki</span>
+              <span className="text-xl md:text-2xl font-serif font-black text-primary tracking-tighter italic">Pierogarnia</span>
+              <span className="text-[10px] md:text-xs font-bold text-accent tracking-[0.3em] uppercase -mt-1 ml-1">u Yulki</span>
             </div>
           </motion.div>
           
@@ -108,10 +108,10 @@ export default function App() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="flex items-center gap-3 bg-primary text-white px-7 py-3 rounded-none asian-border hover:bg-red-900 transition-all shadow-[8px_8px_0px_0px_rgba(212,175,55,0.3)]"
+            className="flex items-center gap-2 md:gap-3 bg-primary text-white px-4 py-2 md:px-7 md:py-3 rounded-none asian-border hover:bg-red-900 transition-all shadow-[6px_6px_0px_0px_rgba(212,175,55,0.3)] md:shadow-[8px_8px_0px_0px_rgba(212,175,55,0.3)]"
           >
-            <Facebook size={20} />
-            <span className="text-sm font-black uppercase tracking-widest">Social</span>
+            <Facebook size={18} className="md:w-5 md:h-5" />
+            <span className="text-[10px] md:text-sm font-black uppercase tracking-widest">Social</span>
           </motion.a>
         </div>
       </nav>
